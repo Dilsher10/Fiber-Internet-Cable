@@ -1,6 +1,8 @@
-import { Check, CheckCheck, CheckCheckIcon, CheckCircle, CheckCircle2, CheckCircle2Icon, CheckCircleIcon, CheckSquare, Phone, PhoneCall, PhoneIcon, TicketCheck } from "lucide-react";
+"use client"
+import { Check, Facebook, FacebookIcon, Globe, Mail, Map, MapPin, Monitor, Phone, Twitter, Wifi, Youtube } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import LogoSlider from "./_components/LogoSlider";
 
 export default function Home() {
   return (
@@ -15,7 +17,6 @@ export default function Home() {
                 <Image src={'/logo.png'} alt='logo' width={180} height={180} />
               </Link>
             </div>
-
             <div className="hidden md:block">
               <nav aria-label="Global">
                 <ul className="flex items-center gap-10 font-bold">
@@ -34,18 +35,12 @@ export default function Home() {
                 </ul>
               </nav>
             </div>
-
             <div className="flex items-center gap-4">
-              <div className="sm:flex sm:gap-4">
-                <a
-                  className="rounded-md bg-primary px-8 py-4 font-bold text-white shadow-sm"
-                  href="#"
-                >
-
-                  (855) 843-7329
+              <div className="hidden sm:flex sm:gap-4">
+                <a className="rounded-md bg-primary px-8 py-4 font-bold text-white shadow-sm flex gap-2 items-center hover:animate-bounce-up-down" href="tel:(855) 843-7329">
+                  <Image src={'/phone.png'} alt="phone" width={18} height={18}/> (855) 843-7329
                 </a>
               </div>
-
               <div className="block md:hidden">
                 <button
                   className="rounded-sm bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75"
@@ -72,14 +67,14 @@ export default function Home() {
       <section className="hero">
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8  mx-auto max-w-screen-xl px-4 pt-32 pb-10 sm:px-6 lg:h-[800px] lg:items-center lg:px-4">
           <div className="">
-            <h5 className="text-white font-bold text-[17px] mt-10">Welcome to Jamal Prime Inc</h5>
-            <h1 className="text-3xl font-bold text-white lg:text-[44px] leading-[55px] max-w-screen-xl lg:pr-10 py-10">
+            <h5 className="text-white font-bold text-[17px] lg:mt-10">Welcome to Jamal Prime Inc</h5>
+            <h1 className="text-3xl font-bold text-white lg:text-[44px] lg:leading-[55px] max-w-screen-xl lg:pr-10 py-10">
               Your Trusted Authorized Dealer for Major Telecom Brands
             </h1>
-            <p className="max-w-lg text-white text-[17px] mb-16">
+            <p className="max-w-lg text-white text-[17px] mb-10 lg:mb-16">
               Discover seamless connectivity and top-notch service with Jamal Prime Inc. We proudly offer the best in telecom solutions from leading brands such as Spectrum, HughesNet, AT&T, Xfinity, and more. Whether you need reliable internet, phone, or TV services, we’ve got you covered.
             </p>
-            <Link href="tel:+1-(888)-845-0301" className="bg-primary px-8 py-5 rounded-md text-white font-bold">(855) 843-7329</Link>
+            <Link href="tel:+1-(888)-845-0301" className="bg-primary px-8 py-4 rounded-md text-white font-bold w-[210px] flex gap-2 items-center hover:animate-bounce-up-down"><Image src={'/phone.png'} alt="phone" width={18} height={18}/> (855) 843-7329</Link>
           </div>
           <div className="">
             <Image src={'/hero.png'} alt="hero" width={500} height={500} />
@@ -89,7 +84,7 @@ export default function Home() {
 
 
 
-      <section className="mt-20">
+      <section className="bg-white lg:mt-20">
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-10">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-36">
             <div>
@@ -102,13 +97,13 @@ export default function Home() {
             <div>
               <div className="max-w-lg md:max-w-none">
                 <h5 className="text-primary font-bold">About Us</h5>
-                <h2 className="text-2xl font-bold sm:text-[36px] leading-tight text-[#161c2d] py-5">
+                <h2 className="text-2xl font-bold sm:text-[32px] leading-[38px] text-[#161c2d] py-5">
                   We Provide Best Fiber Internet Service By Top Providers
                 </h2>
                 <p className="text-gray-700">
                   We are affiliate and retail partners of AT&T, Xfinity and Comcast Fiber Internet service providers in the United states for:
                 </p>
-                <div className="flex gap-20">
+                <div className="flex lg:gap-20">
                   <ul className="py-8">
                     <li className="flex text-[#161c2d] text-[16px] mb-5 items-center"><Check className="text-primary bg-purple-100 rounded-full mr-3 w-5 h-5" /> Fiber Internet</li>
                     <li className="flex text-[#161c2d] text-[16px] mb-5 items-center"><Check className="text-primary bg-purple-100 rounded-full mr-3 w-5 h-5" /> Speed Up To 1Gbps</li>
@@ -120,7 +115,7 @@ export default function Home() {
                     <li className="flex text-[#161c2d] text-[16px] items-center"><Check className="text-primary bg-purple-100 rounded-full mr-3 w-5 h-5" /> Great Customer Support</li>
                   </ul>
                 </div>
-                <Link href={'/'} className="bg-primary text-white px-5 py-4 rounded-md flex w-48 items-center"><Phone className="mr-3" /> (855) 843-7329</Link>
+                <Link href="tel:(855) 843-7329" className="bg-primary text-white px-5 py-4 rounded-md font-bold flex w-48 gap-2 items-center hover:animate-bounce-up-down"><Image src={'/phone.png'} alt="phone" width={18} height={18}/> (855) 843-7329</Link>
               </div>
             </div>
           </div>
@@ -132,15 +127,15 @@ export default function Home() {
 
 
 
-      <section className="bg-purple-50 mt-16">
+      <section className="bg-purple-50 lg:mt-16 lg:pb-16">
         <div className="mx-auto max-w-screen-xl px-4 pt-8 sm:px-6 sm:pt-12 lg:px-8 lg:pt-20">
           <h5 className="text-center text-[#6c41ff] font-bold">Our Packages</h5>
-          <h2 className="text-center py-10 text-[#161c2d] text-4xl font-extrabold">Xfinity Packages</h2>
+          <h2 className="text-center py-10 text-[#161c2d] text-2xl lg:text-4xl font-extrabold">Xfinity Packages</h2>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-stretch md:grid-cols-3 md:gap-8">
             <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-xs bg-white">
               <div className="p-6 sm:px-8">
                 <a
-                  className="mt-4 block rounded-md border border-indigo-600 bg-[#271446] px-3 py-2.5 text-left text-lg font-bold text-white hover:bg-transparent hover:text-indigo-600 focus:ring-3 focus:outline-hidden sm:mt-6"
+                  className="mt-4 block rounded-md border border-[#1f2124] bg-[#1f2124] px-3 py-2.5 text-left text-lg font-bold text-white hover:bg-transparent hover:text-[#1f2124] focus:ring-3 focus:outline-hidden sm:mt-6"
                   href="#"
                 >
                   Connect More
@@ -198,7 +193,7 @@ export default function Home() {
                   </li>
                 </ul>
                 <a
-                  className="mt-4 block rounded-md border border-indigo-600 bg-primary px-3 py-2.5 text-center text-lg font-bold text-white hover:bg-transparent hover:text-indigo-600 focus:ring-3 focus:outline-hidden sm:mt-6"
+                  className="mt-4 block rounded-md border border-primary bg-primary px-3 py-2.5 text-center text-lg font-bold text-white hover:bg-transparent hover:text-primary focus:ring-3 focus:outline-hidden sm:mt-6"
                   href="#"
                 >
                   Order Now
@@ -208,16 +203,16 @@ export default function Home() {
             <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-xs bg-white">
               <div className="p-6 sm:px-8">
                 <a
-                  className="mt-4 block rounded-md border border-indigo-600 bg-[#271446] px-3 py-2.5 text-left text-lg font-bold text-white hover:bg-transparent hover:text-indigo-600 focus:ring-3 focus:outline-hidden sm:mt-6"
+                  className="mt-4 block rounded-md border border-[#1f2124] bg-[#1f2124] px-3 py-2.5 text-left text-lg font-bold text-white hover:bg-transparent hover:text-[#1f2124] focus:ring-3 focus:outline-hidden sm:mt-6"
                   href="#"
                 >
-                  Connect More
+                  Superfast
                 </a>
                 <h2 className="text-lg font-extrabold text-gray-900 my-5">
-                  Price: $35.00/month
+                  Price: $60.00/month
                   <span className="sr-only">Plan</span>
                 </h2>
-                <p className="text-gray-800 font-bold">Speed: Up to 200 Mbps download, 10 Mbps upload</p>
+                <p className="text-gray-800 font-bold">Speed: Up to 800 Mbps download, 20 Mbps upload</p>
               </div>
               <div className="p-6 sm:px-8">
                 <ul className="mt-2 space-y-5 sm:mt-0">
@@ -232,7 +227,7 @@ export default function Home() {
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                     </svg>
-                    <span className="text-gray-700"> Suitable for everyday activities like browsing, streaming, and video conferencing. </span>
+                    <span className="text-gray-700"> Ideal for households with multiple devices, supporting 4K streaming and online gaming. </span>
                   </li>
 
                   <li className="flex items-center gap-3">
@@ -247,7 +242,7 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                     </svg>
 
-                    <span className="text-gray-700"> No term contract required. </span>
+                    <span className="text-gray-700"> 12-month agreement required. </span>
                   </li>
 
                   <li className="flex items-center gap-3">
@@ -266,7 +261,7 @@ export default function Home() {
                   </li>
                 </ul>
                 <a
-                  className="mt-4 block rounded-md border border-indigo-600 bg-primary px-3 py-2.5 text-center text-lg font-bold text-white hover:bg-transparent hover:text-indigo-600 focus:ring-3 focus:outline-hidden sm:mt-6"
+                  className="mt-4 block rounded-md border border-primary bg-primary px-3 py-2.5 text-center text-lg font-bold text-white hover:bg-transparent hover:text-primary focus:ring-3 focus:outline-hidden sm:mt-6"
                   href="#"
                 >
                   Order Now
@@ -276,16 +271,16 @@ export default function Home() {
             <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-xs bg-white">
               <div className="p-6 sm:px-8">
                 <a
-                  className="mt-4 block rounded-md border border-indigo-600 bg-[#271446] px-3 py-2.5 text-left text-lg font-bold text-white hover:bg-transparent hover:text-indigo-600 focus:ring-3 focus:outline-hidden sm:mt-6"
+                  className="mt-4 block rounded-md border border-[#1f2124] bg-[#1f2124] px-3 py-2.5 text-left text-lg font-bold text-white hover:bg-transparent hover:text-[#1f2124] focus:ring-3 focus:outline-hidden sm:mt-6"
                   href="#"
                 >
-                  Connect More
+                  Gigabit Extra
                 </a>
                 <h2 className="text-lg font-extrabold text-gray-900 my-5">
-                  Price: $35.00/month
+                  Price: $80.00/month
                   <span className="sr-only">Plan</span>
                 </h2>
-                <p className="text-gray-800 font-bold">Speed: Up to 200 Mbps download, 10 Mbps upload</p>
+                <p className="text-gray-800 font-bold">Speed: Up to 1,200 Mbps download, 35 Mbps upload</p>
               </div>
               <div className="p-6 sm:px-8">
                 <ul className="mt-2 space-y-5 sm:mt-0">
@@ -300,7 +295,7 @@ export default function Home() {
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                     </svg>
-                    <span className="text-gray-700"> Suitable for everyday activities like browsing, streaming, and video conferencing. </span>
+                    <span className="text-gray-700"> Best for large households or heavy internet users who need ultra-fast speeds for activities like HD streaming and large file downloads. </span>
                   </li>
 
                   <li className="flex items-center gap-3">
@@ -315,7 +310,7 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                     </svg>
 
-                    <span className="text-gray-700"> No term contract required. </span>
+                    <span className="text-gray-700"> No term contract. </span>
                   </li>
 
                   <li className="flex items-center gap-3">
@@ -334,7 +329,7 @@ export default function Home() {
                   </li>
                 </ul>
                 <a
-                  className="mt-4 block rounded-md border border-indigo-600 bg-primary px-3 py-2.5 text-center text-lg font-bold text-white hover:bg-transparent hover:text-indigo-600 focus:ring-3 focus:outline-hidden sm:mt-6"
+                  className="mt-4 block rounded-md border border-primary bg-primary px-3 py-2.5 text-center text-lg font-bold text-white hover:bg-transparent hover:text-primary focus:ring-3 focus:outline-hidden sm:mt-6"
                   href="#"
                 >
                   Order Now
@@ -344,21 +339,21 @@ export default function Home() {
           </div>
         </div>
         <div className="mx-auto max-w-screen-xl px-4 pt-8 sm:px-6 sm:pt-12 lg:px-8">
-          <h2 className="text-center pb-10 text-[#161c2d] text-4xl font-extrabold">Xfinity Packages</h2>
+          <h2 className="text-center pb-10 text-[#161c2d] text-2xl lg:text-4xl font-extrabold">AT&T Packages</h2>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-stretch md:grid-cols-3 md:gap-8">
             <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-xs bg-white">
               <div className="p-6 sm:px-8">
                 <a
-                  className="mt-4 block rounded-md border border-indigo-600 bg-[#271446] px-3 py-2.5 text-left text-lg font-bold text-white hover:bg-transparent hover:text-indigo-600 focus:ring-3 focus:outline-hidden sm:mt-6"
+                  className="mt-4 block rounded-md border border-[#1f2124] bg-[#1f2124] px-3 py-2.5 text-left text-lg font-bold text-white hover:bg-transparent hover:text-[#1f2124] focus:ring-3 focus:outline-hidden sm:mt-6"
                   href="#"
                 >
-                  Connect More
+                  Essential Plan
                 </a>
                 <h2 className="text-lg font-extrabold text-gray-900 my-5">
-                  Price: $35.00/month
+                  Price: $25.00/month
                   <span className="sr-only">Plan</span>
                 </h2>
-                <p className="text-gray-800 font-bold">Speed: Up to 200 Mbps download, 10 Mbps upload</p>
+                <p className="text-gray-800 font-bold">Speed: Up to 100 Mbps download, 5 Mbps upload</p>
               </div>
               <div className="p-6 sm:px-8">
                 <ul className="mt-2 space-y-5 sm:mt-0">
@@ -407,7 +402,7 @@ export default function Home() {
                   </li>
                 </ul>
                 <a
-                  className="mt-4 block rounded-md border border-indigo-600 bg-primary px-3 py-2.5 text-center text-lg font-bold text-white hover:bg-transparent hover:text-indigo-600 focus:ring-3 focus:outline-hidden sm:mt-6"
+                  className="mt-4 block rounded-md border border-primary bg-primary px-3 py-2.5 text-center text-lg font-bold text-white hover:bg-transparent hover:text-primary focus:ring-3 focus:outline-hidden sm:mt-6"
                   href="#"
                 >
                   Order Now
@@ -417,16 +412,16 @@ export default function Home() {
             <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-xs bg-white">
               <div className="p-6 sm:px-8">
                 <a
-                  className="mt-4 block rounded-md border border-indigo-600 bg-[#271446] px-3 py-2.5 text-left text-lg font-bold text-white hover:bg-transparent hover:text-indigo-600 focus:ring-3 focus:outline-hidden sm:mt-6"
+                  className="mt-4 block rounded-md border border-[#1f2124] bg-[#1f2124] px-3 py-2.5 text-left text-lg font-bold text-white hover:bg-transparent hover:text-[#1f2124] focus:ring-3 focus:outline-hidden sm:mt-6"
                   href="#"
                 >
-                  Connect More
+                  Preferred Plan
                 </a>
                 <h2 className="text-lg font-extrabold text-gray-900 my-5">
-                  Price: $35.00/month
+                  Price: $50.00/month
                   <span className="sr-only">Plan</span>
                 </h2>
-                <p className="text-gray-800 font-bold">Speed: Up to 200 Mbps download, 10 Mbps upload</p>
+                <p className="text-gray-800 font-bold">Speed: Up to 500 Mbps download, 50 Mbps upload</p>
               </div>
               <div className="p-6 sm:px-8">
                 <ul className="mt-2 space-y-5 sm:mt-0">
@@ -441,7 +436,7 @@ export default function Home() {
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                     </svg>
-                    <span className="text-gray-700"> Suitable for everyday activities like browsing, streaming, and video conferencing. </span>
+                    <span className="text-gray-700"> Ideal for moderate usage such as HD streaming, online gaming, and remote working. </span>
                   </li>
 
                   <li className="flex items-center gap-3">
@@ -475,7 +470,7 @@ export default function Home() {
                   </li>
                 </ul>
                 <a
-                  className="mt-4 block rounded-md border border-indigo-600 bg-primary px-3 py-2.5 text-center text-lg font-bold text-white hover:bg-transparent hover:text-indigo-600 focus:ring-3 focus:outline-hidden sm:mt-6"
+                  className="mt-4 block rounded-md border border-primary bg-primary px-3 py-2.5 text-center text-lg font-bold text-white hover:bg-transparent hover:text-primary focus:ring-3 focus:outline-hidden sm:mt-6"
                   href="#"
                 >
                   Order Now
@@ -485,16 +480,16 @@ export default function Home() {
             <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-xs bg-white">
               <div className="p-6 sm:px-8">
                 <a
-                  className="mt-4 block rounded-md border border-indigo-600 bg-[#271446] px-3 py-2.5 text-left text-lg font-bold text-white hover:bg-transparent hover:text-indigo-600 focus:ring-3 focus:outline-hidden sm:mt-6"
+                  className="mt-4 block rounded-md border border-[#1f2124] bg-[#1f2124] px-3 py-2.5 text-left text-lg font-bold text-white hover:bg-transparent hover:text-[#1f2124] focus:ring-3 focus:outline-hidden sm:mt-6"
                   href="#"
                 >
-                  Connect More
+                  Ultimate Plan
                 </a>
                 <h2 className="text-lg font-extrabold text-gray-900 my-5">
-                  Price: $35.00/month
+                  Price: $75.00/month
                   <span className="sr-only">Plan</span>
                 </h2>
-                <p className="text-gray-800 font-bold">Speed: Up to 200 Mbps download, 10 Mbps upload</p>
+                <p className="text-gray-800 font-bold">Speed: Up to 1 Gbps download, 100 Mbps upload</p>
               </div>
               <div className="p-6 sm:px-8">
                 <ul className="mt-2 space-y-5 sm:mt-0">
@@ -509,7 +504,7 @@ export default function Home() {
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                     </svg>
-                    <span className="text-gray-700"> Suitable for everyday activities like browsing, streaming, and video conferencing. </span>
+                    <span className="text-gray-700"> Perfect for heavy usage, including 4K streaming, large file transfers, and smart home devices. </span>
                   </li>
 
                   <li className="flex items-center gap-3">
@@ -543,7 +538,7 @@ export default function Home() {
                   </li>
                 </ul>
                 <a
-                  className="mt-4 block rounded-md border border-indigo-600 bg-primary px-3 py-2.5 text-center text-lg font-bold text-white hover:bg-transparent hover:text-indigo-600 focus:ring-3 focus:outline-hidden sm:mt-6"
+                  className="mt-4 block rounded-md border border-primary bg-primary px-3 py-2.5 text-center text-lg font-bold text-white hover:bg-transparent hover:text-primary focus:ring-3 focus:outline-hidden sm:mt-6"
                   href="#"
                 >
                   Order Now
@@ -553,21 +548,21 @@ export default function Home() {
           </div>
         </div>
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-          <h2 className="text-center pb-10 text-[#161c2d] text-4xl font-extrabold">Xfinity Packages</h2>
+          <h2 className="text-center pb-10 text-[#161c2d] text-2xl lg:text-4xl font-extrabold">Spectrum Packages</h2>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-stretch md:grid-cols-3 md:gap-8">
             <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-xs bg-white">
               <div className="p-6 sm:px-8">
                 <a
-                  className="mt-4 block rounded-md border border-indigo-600 bg-[#271446] px-3 py-2.5 text-left text-lg font-bold text-white hover:bg-transparent hover:text-indigo-600 focus:ring-3 focus:outline-hidden sm:mt-6"
+                  className="mt-4 block rounded-md border border-[#1f2124] bg-[#1f2124] px-3 py-2.5 text-left text-lg font-bold text-white hover:bg-transparent hover:text-[#1f2124] focus:ring-3 focus:outline-hidden sm:mt-6"
                   href="#"
                 >
-                  Connect More
+                  Spectrum Basic
                 </a>
                 <h2 className="text-lg font-extrabold text-gray-900 my-5">
-                  Price: $35.00/month
+                  Price: $29.99/month
                   <span className="sr-only">Plan</span>
                 </h2>
-                <p className="text-gray-800 font-bold">Speed: Up to 200 Mbps download, 10 Mbps upload</p>
+                <p className="text-gray-800 font-bold">Speed: Up to 100 Mbps download, 10 Mbps upload</p>
               </div>
               <div className="p-6 sm:px-8">
                 <ul className="mt-2 space-y-5 sm:mt-0">
@@ -616,7 +611,7 @@ export default function Home() {
                   </li>
                 </ul>
                 <a
-                  className="mt-4 block rounded-md border border-indigo-600 bg-primary px-3 py-2.5 text-center text-lg font-bold text-white hover:bg-transparent hover:text-indigo-600 focus:ring-3 focus:outline-hidden sm:mt-6"
+                  className="mt-4 block rounded-md border border-primary bg-primary px-3 py-2.5 text-center text-lg font-bold text-white hover:bg-transparent hover:text-primary focus:ring-3 focus:outline-hidden sm:mt-6"
                   href="#"
                 >
                   Order Now
@@ -626,16 +621,16 @@ export default function Home() {
             <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-xs bg-white">
               <div className="p-6 sm:px-8">
                 <a
-                  className="mt-4 block rounded-md border border-indigo-600 bg-[#271446] px-3 py-2.5 text-left text-lg font-bold text-white hover:bg-transparent hover:text-indigo-600 focus:ring-3 focus:outline-hidden sm:mt-6"
+                  className="mt-4 block rounded-md border border-[#1f2124] bg-[#1f2124] px-3 py-2.5 text-left text-lg font-bold text-white hover:bg-transparent hover:text-[#1f2124] focus:ring-3 focus:outline-hidden sm:mt-6"
                   href="#"
                 >
-                  Connect More
+                  Spectrum Plus
                 </a>
                 <h2 className="text-lg font-extrabold text-gray-900 my-5">
-                  Price: $35.00/month
+                  Price: $49.99.00/month
                   <span className="sr-only">Plan</span>
                 </h2>
-                <p className="text-gray-800 font-bold">Speed: Up to 200 Mbps download, 10 Mbps upload</p>
+                <p className="text-gray-800 font-bold">Speed: Up to 400 Mbps download, 20 Mbps upload</p>
               </div>
               <div className="p-6 sm:px-8">
                 <ul className="mt-2 space-y-5 sm:mt-0">
@@ -650,7 +645,7 @@ export default function Home() {
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                     </svg>
-                    <span className="text-gray-700"> Suitable for everyday activities like browsing, streaming, and video conferencing. </span>
+                    <span className="text-gray-700"> Ideal for moderate usage such as HD streaming, online gaming, and remote working. </span>
                   </li>
 
                   <li className="flex items-center gap-3">
@@ -684,7 +679,7 @@ export default function Home() {
                   </li>
                 </ul>
                 <a
-                  className="mt-4 block rounded-md border border-indigo-600 bg-primary px-3 py-2.5 text-center text-lg font-bold text-white hover:bg-transparent hover:text-indigo-600 focus:ring-3 focus:outline-hidden sm:mt-6"
+                  className="mt-4 block rounded-md border border-primary bg-primary px-3 py-2.5 text-center text-lg font-bold text-white hover:bg-transparent hover:text-primary focus:ring-3 focus:outline-hidden sm:mt-6"
                   href="#"
                 >
                   Order Now
@@ -694,16 +689,16 @@ export default function Home() {
             <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-xs bg-white">
               <div className="p-6 sm:px-8">
                 <a
-                  className="mt-4 block rounded-md border border-indigo-600 bg-[#271446] px-3 py-2.5 text-left text-lg font-bold text-white hover:bg-transparent hover:text-indigo-600 focus:ring-3 focus:outline-hidden sm:mt-6"
+                  className="mt-4 block rounded-md border border-[#1f2124] bg-[#1f2124] px-3 py-2.5 text-left text-lg font-bold text-white hover:bg-transparent hover:text-[#1f2124] focus:ring-3 focus:outline-hidden sm:mt-6"
                   href="#"
                 >
-                  Connect More
+                  Spectrum Ultra
                 </a>
                 <h2 className="text-lg font-extrabold text-gray-900 my-5">
-                  Price: $35.00/month
+                  Price: $69.99/month
                   <span className="sr-only">Plan</span>
                 </h2>
-                <p className="text-gray-800 font-bold">Speed: Up to 200 Mbps download, 10 Mbps upload</p>
+                <p className="text-gray-800 font-bold">Speed: Up to 1 Gbps (1000 Mbps) download, 35 Mbps upload</p>
               </div>
               <div className="p-6 sm:px-8">
                 <ul className="mt-2 space-y-5 sm:mt-0">
@@ -718,7 +713,7 @@ export default function Home() {
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                     </svg>
-                    <span className="text-gray-700"> Suitable for everyday activities like browsing, streaming, and video conferencing. </span>
+                    <span className="text-gray-700"> Perfect for heavy usage, including 4K streaming, large file transfers, and smart home devices. </span>
                   </li>
 
                   <li className="flex items-center gap-3">
@@ -752,7 +747,7 @@ export default function Home() {
                   </li>
                 </ul>
                 <a
-                  className="mt-4 block rounded-md border border-indigo-600 bg-primary px-3 py-2.5 text-center text-lg font-bold text-white hover:bg-transparent hover:text-indigo-600 focus:ring-3 focus:outline-hidden sm:mt-6"
+                  className="mt-4 block rounded-md border border-primary bg-primary px-3 py-2.5 text-center text-lg font-bold text-white hover:bg-transparent hover:text-primary focus:ring-3 focus:outline-hidden sm:mt-6"
                   href="#"
                 >
                   Order Now
@@ -764,10 +759,234 @@ export default function Home() {
       </section>
 
 
+      <section className="bg-primary py-10 lg:py-20">
+        <div className="mx-auto max-w-screen-xl lg:w-[1100px]">
+          <h5 className="text-center text-white text-bold">Authorized Dealers</h5>
+          <h2 className="text-center text-white text-2xl lg:text-4xl font-bold py-10">Our Authorized Dealers</h2>
+          <LogoSlider />
+        </div>
+      </section>
 
 
 
-      
+      <section className="bg-[#1f2124] py-10 lg:py-20">
+        <div className="mx-auto max-w-screen-xl px-3 lg:px-0">
+          <h5 className="text-center text-white text-bold">Services</h5>
+          <h2 className="text-center text-white text-2xl lg:text-4xl font-bold py-10">Your Gateway to Premium Fiber Internet Services</h2>
+          <p className="text-white text-center lg:w-[800px] mx-auto">Discover our comprehensive range of top-notch fiber internet services designed to meet your needs and exceed your expectations. Explore now.</p>
+        </div>
+        <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:gap-8 mx-auto max-w-screen-xl mt-16 px-5 lg:px-16">
+          <div className="rounded-lg bg-primary text-center p-7">
+            <Wifi className="text-primary bg-white rounded-md w-14 h-14 p-2 mx-auto" />
+            <h3 className="font-bold text-white text-2xl py-5">Cable Internet</h3>
+            <p className="text-white">Fastest cable Internet services in your area, call us now</p>
+          </div>
+          <div className="rounded-lg bg-primary text-center p-7">
+            <Globe className="text-primary bg-white rounded-md w-14 h-14 p-2 mx-auto" />
+            <h3 className="font-bold text-white text-2xl py-5">Fiber Internet</h3>
+            <p className="text-white">Get affordable pricing with amazing discounts.  </p>
+          </div>
+          <div className="rounded-lg bg-primary text-center p-7">
+            <Wifi className="text-primary bg-white rounded-md w-14 h-14 p-2 mx-auto" />
+            <h3 className="font-bold text-white text-2xl py-5">Wireless</h3>
+            <p className="text-white">Fastest Wireless Services to change your world</p>
+          </div>
+          <div className="rounded-lg bg-primary text-center p-7">
+            <Monitor className="text-primary bg-white rounded-md w-14 h-14 p-2 mx-auto" />
+            <h3 className="font-bold text-white text-2xl py-5">TV Service</h3>
+            <p className="text-white">Call now for fast ever TV services by top providers</p>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <section className="bg-purple-50">
+        <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 mx-auto max-w-screen-xl px-16 py-20">
+          <div className="">
+            <h5 className="text-primary font-bold">Contact Us</h5>
+            <h2 className="text-[20px] lg:text-[43px] font-bold text-[#161c2d] py-7 leading-[1.2]">Connect with Us, Your Feedback Matters to Us.</h2>
+            <p className="text-[#161c2d]">We value your input and inquiries. Please feel free to reach out to us. We’re here to assist you anytime you need us.</p>
+            <ul className="py-5 leading-[3]">
+              <li className="flex gap-2 items-center"><Phone className="text-primary" /> (855) 843-7329</li>
+              <li className="flex gap-2 items-center"><Mail className="text-primary" /> info@fiberinternetcable.com</li>
+              <li className="flex gap-2 items-center"><MapPin className="text-primary" /> 5075 MEMORIAL DR, SUITE 343-B, Stone Mountain, Georgia, 30083</li>
+            </ul>
+            <div className="flex gap-5">
+              <FacebookIcon className="bg-primary rounded-md text-white p-1 w-8 h-8 cursor-pointer hover:scale-110 transition" />
+              <Twitter className="bg-primary rounded-md text-white p-1 w-8 h-8 cursor-pointer hover:scale-110 transition" />
+              <Youtube className="bg-primary rounded-md text-white p-1 w-8 h-8 cursor-pointer hover:scale-110 transition" />
+            </div>
+          </div>
+          <div className="">
+            <form action="#" className="grid grid-cols-6 gap-6">
+              <div className="col-span-6">
+                <label htmlFor="Name" className="block text-sm font-medium text-gray-700">
+                  NAME
+                </label>
+                <input
+                  type="text"
+                  id="Name"
+                  name="name"
+                  placeholder="Name"
+                  className="mt-1 w-full rounded-md border-gray-200 bg-[#E9E9E9] text-sm text-gray-700 shadow-xs p-3"
+                  required
+                />
+              </div>
+              <div className="col-span-6">
+                <label htmlFor="Phone" className="block text-sm font-medium text-gray-700">
+                  PHONE
+                </label>
+                <input
+                  type="text"
+                  id="Phone"
+                  name="phone"
+                  placeholder="Phone"
+                  className="mt-1 w-full rounded-md border-gray-200 bg-[#E9E9E9] text-sm text-gray-700 shadow-xs p-3"
+                  required
+                />
+              </div>
+              <div className="col-span-6">
+                <label htmlFor="Email" className="block text-sm font-medium text-gray-700">EMAIL</label>
+                <input
+                  type="email"
+                  id="Email"
+                  name="email"
+                  placeholder="Email"
+                  className="mt-1 w-full rounded-md border-gray-200 bg-[#E9E9E9] text-sm text-gray-700 shadow-xs p-3"
+                  required
+                />
+              </div>
+              <div className="col-span-6">
+                <label htmlFor="Services" className="block text-sm font-medium text-gray-700">SERVICES</label>
+                <select name="" id="Services" className="bg-[#E9E9E9] w-full p-3 rounded-md mt-1">
+                  <option value="Cable Internet">Cable Internet</option>
+                  <option value="Cable Internet">Cable Internet</option>
+                  <option value="Cable Internet">Cable Internet</option>
+                </select>
+              </div>
+              <div className="col-span-6">
+                <label htmlFor="Message" className="block text-sm font-medium text-gray-700">
+                  MESSAGE
+                </label>
+                <textarea name="" id="Message" placeholder="Message" rows={4} className="w-full bg-[#E9E9E9] p-3 rounded-md mt-1" required></textarea>
+              </div>
+              <div className="col-span-6">
+                <label htmlFor="MarketingAccept" className="flex gap-4">
+                  <input
+                    type="checkbox"
+                    id="MarketingAccept"
+                    name="marketing_accept"
+                    className="size-5 rounded-md border-gray-200 bg-white shadow-xs"
+                    required
+                  />
+                  <span className="text-sm text-gray-700">
+                    By clicking the send message button and submitting this form, I acknowledge that I permit JAMAL PRIME, INC. to use my information provided to search for their best current offers for telecom services. I also allow JAMAL PRIME, INC. express consent to contact me at the number and/or email address I have provided above with automated technology in relation to this inquiry via phone or e-mail.
+                  </span>
+                </label>
+              </div>
+              <div className="col-span-6">
+                <button
+                  className="inline-block shrink-0 rounded-md border border-primary bg-primary px-12 py-3 text-lg font-bold text-white transition hover:bg-transparent hover:text-primary focus:ring-3 focus:outline-hidden w-full"
+                >
+                  Submit Now
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+
+
+      {/* Footer */}
+
+
+      <footer className="bg-[#1f2124]">
+        <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-10 lg:pt-20">
+          <div className="grid grid-cols-1 gap-1 lg:grid-cols-3">
+            <div>
+              <div className="flex justify-center text-teal-600 sm:justify-start">
+                <Image src={'/logo.png'} alt="logo" width={190} height={55} />
+              </div>
+              <p className="mt-6 max-w-md text-center leading-relaxed text-white sm:max-w-xs sm:text-left">
+                We are affiliate and retail partners of AT&T, Xfinity and Comcast Fiber Internet service providers in the United states.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 gap-0 sm:grid-cols-2 md:grid-cols-3 lg:col-span-2">
+              <div className="text-center sm:text-left">
+                <p className="text-2xl font-bold text-white">Company</p>
+                <ul className="mt-8 space-y-4 text-sm">
+                  <li>
+                    <a className="text-white text-[17px] transition" href="#">
+                      About Us
+                    </a>
+                  </li>
+                  <li>
+                    <a className="text-white text-[17px] transition" href="#">
+                      Services
+                    </a>
+                  </li>
+                  <li>
+                    <a className="text-white text-[17px] transition" href="#">
+                      Privacy Policy
+                    </a>
+                  </li>
+                  <li>
+                    <a className="text-white text-[17px] transition" href="#"> Contact Us </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="text-center sm:text-left">
+                <p className="text-2xl font-bold text-white">Service</p>
+                <ul className="mt-8 space-y-4 text-sm">
+                  <li>
+                    <a className="text-white text-[17px] transition" href="#">
+                      Cable Internet
+                    </a>
+                  </li>
+                  <li>
+                    <a className="text-white text-[17px] transition" href="#">Fiber Internet </a>
+                  </li>
+                  <li>
+                    <a className="text-white text-[17px] transition" href="#"> TV Service </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="text-center sm:text-left">
+                <p className="text-2xl font-bold text-white">Subscribe Our Newsletter</p>
+                <form className="mt-6 w-full">
+                  <label htmlFor="UserEmail" className="sr-only"> Email </label>
+                  <div
+                    className="rounded-md border border-gray-100 p-2 focus-within:ring-3 sm:flex sm:items-center sm:gap-4"
+                  >
+                    <input
+                      type="email"
+                      id="UserEmail"
+                      placeholder="Your email"
+                      className="w-full border-none bg-transparent focus:border-none focus:ring-none sm:text-sm outline-none text-white"
+                    />
+                    <button
+                      className="mt-1 w-full rounded-md bg-primary px-6 py-3 text-sm font-bold tracking-wide text-white uppercase transition-none hover:bg-teal-600 sm:mt-0 sm:w-auto sm:shrink-0"
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div className="mt-12 border-t border-gray-100 pt-6">
+            <div className="text-center sm:text-left">
+              <p className="mt-4 text-sm text-white text-center sm:mt-0">2023 All right reserved by Jamal Prime Inc.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
 
     </>
   );

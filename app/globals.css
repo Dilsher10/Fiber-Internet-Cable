@@ -21,5 +21,13 @@ body {
 }
 
 .hero{
-  background: #271446;
+  background: #1f2124;
 }
+
+
+.slick-initialized .slick-slide {
+  display: flex !important;
+  justify-content: center;
+}
+
+

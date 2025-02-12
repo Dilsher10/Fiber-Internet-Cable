@@ -7,12 +7,22 @@ export default {
   ],
   theme: {
     extend: {
+      animation: {
+        'bounce-up-down': 'bounceUpDown 2s infinite ease-in-out',
+      },
+      keyframes: {
+        bounceUpDown: {
+          '0%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+          '100%': { transform: 'translateY(0)' },
+        },
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        primary: "#5634cc"
+        primary: "#219953",
       },
     },
   },
   plugins: [],
-};
+}
