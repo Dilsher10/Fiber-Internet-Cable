@@ -41,25 +41,25 @@ export default function LogoSlider() {
     return (
         <Slider {...settings}>
             <div>
-                <Image src={'/logo-1.png'} alt="logo" width={115} height={115} />
+                <Image src={'/logo-1.png'} alt="logo" width={130} height={120} />
             </div>
             <div>
-                <Image src={'/logo-2.png'} alt="logo" width={115} height={115} />
+                <Image src={'/logo-2.png'} alt="logo" width={130} height={120} />
             </div>
             <div>
-                <Image src={'/logo-3.png'} alt="logo" width={115} height={115} />
+                <Image src={'/logo-3.png'} alt="logo" width={130} height={120} />
             </div>
             <div>
-                <Image src={'/logo-4.png'} alt="logo" width={115} height={115} />
+                <Image src={'/logo-4.png'} alt="logo" width={130} height={120} />
             </div>
             <div>
-                <Image src={'/logo-5.png'} alt="logo" width={115} height={115} />
+                <Image src={'/logo-5.png'} alt="logo" width={130} height={120} />
             </div>
             <div>
-                <Image src={'/logo-6.png'} alt="logo" width={115} height={115} />
+                <Image src={'/logo-6.png'} alt="logo" width={130} height={120} />
             </div>
             <div>
-                <Image src={'/logo-1.png'} alt="logo" width={115} height={115} />
+                <Image src={'/logo-1.png'} alt="logo" width={130} height={120} />
             </div>
         </Slider>
     );

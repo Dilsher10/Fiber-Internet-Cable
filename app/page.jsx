@@ -1,36 +1,42 @@
 "use client"
-import { Check, Facebook, FacebookIcon, Globe, Mail, Map, MapPin, Monitor, Phone, Twitter, Wifi, Youtube } from "lucide-react";
+import { Check, FacebookIcon, Globe, Mail, MapPin, Monitor, Phone, Twitter, Wifi, Youtube } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import LogoSlider from "./_components/LogoSlider";
+import Hero from "./_components/Hero";
+import { useEffect } from "react";
+import AOS from 'aos';
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       {/* Navbar */}
 
-      <header className="absolute z-10 w-full mt-5 lg:mt-10">
-        <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-4">
+      <header className="absolute z-10 w-full mt-5 lg:mt-5">
+        <div className="mx-auto max-w-screen-xl px-4 md:px-[4.4rem] lg:px-[4.4rem]">
           <div className="flex h-16 items-center justify-between">
             <div className="md:flex md:items-center md:gap-12">
               <Link className="block text-white font-extrabold text-[17px] lg:text-2xl" href="/">
-                <Image src={'/logo.png'} alt='logo' width={180} height={180} />
+                <Image src={'/logo.png'} alt='logo' width={190} height={185} />
               </Link>
             </div>
             <div className="hidden md:block">
               <nav aria-label="Global">
-                <ul className="flex items-center gap-10 font-bold">
+                <ul className="flex items-center gap-16 font-bold">
                   <li>
-                    <a className="text-white transition hover:text-gray-500/75" href="#"> Home </a>
+                    <a className="text-primary transition hover:text-primary" href="#"> Home </a>
                   </li>
                   <li>
-                    <a className="text-white transition hover:text-gray-500/75" href="#"> About Us </a>
+                    <a className="text-white transition hover:text-primary" href="#"> About Us </a>
                   </li>
                   <li>
-                    <a className="text-white transition hover:text-gray-500/75" href="#"> Services </a>
+                    <a className="text-white transition hover:text-primary" href="#"> Services </a>
                   </li>
                   <li>
-                    <a className="text-white transition hover:text-gray-500/75" href="#"> Contact Us </a>
+                    <a className="text-white transition hover:text-primary" href="#"> Contact Us </a>
                   </li>
                 </ul>
               </nav>
@@ -38,7 +44,7 @@ export default function Home() {
             <div className="flex items-center gap-4">
               <div className="hidden sm:flex sm:gap-4">
                 <a className="rounded-md bg-primary px-8 py-4 font-bold text-white shadow-sm flex gap-2 items-center hover:animate-bounce-up-down" href="tel:(855) 843-7329">
-                  <Image src={'/phone.png'} alt="phone" width={18} height={18}/> (855) 843-7329
+                  <Image src={'/phone.png'} alt="phone" width={18} height={18} /> (855) 843-7329
                 </a>
               </div>
               <div className="block md:hidden">
@@ -62,45 +68,21 @@ export default function Home() {
         </div>
       </header>
 
-
-
-      <section className="hero">
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8  mx-auto max-w-screen-xl px-4 pt-32 pb-10 sm:px-6 lg:h-[800px] lg:items-center lg:px-4">
-          <div className="">
-            <h5 className="text-white font-bold text-[17px] lg:mt-10">Welcome to Jamal Prime Inc</h5>
-            <h1 className="text-3xl font-bold text-white lg:text-[44px] lg:leading-[55px] max-w-screen-xl lg:pr-10 py-10">
-              Your Trusted Authorized Dealer for Major Telecom Brands
-            </h1>
-            <p className="max-w-lg text-white text-[17px] mb-10 lg:mb-16">
-              Discover seamless connectivity and top-notch service with Jamal Prime Inc. We proudly offer the best in telecom solutions from leading brands such as Spectrum, HughesNet, AT&T, Xfinity, and more. Whether you need reliable internet, phone, or TV services, we’ve got you covered.
-            </p>
-            <Link href="tel:+1-(888)-845-0301" className="bg-primary px-8 py-4 rounded-md text-white font-bold w-[210px] flex gap-2 items-center hover:animate-bounce-up-down"><Image src={'/phone.png'} alt="phone" width={18} height={18}/> (855) 843-7329</Link>
-          </div>
-          <div className="">
-            <Image src={'/hero.png'} alt="hero" width={500} height={500} />
-          </div>
-        </div>
-      </section>
-
-
+      <Hero />
 
       <section className="bg-white lg:mt-20">
-        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-10">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-36">
+        <div className="mx-auto max-w-screen-xl px-4 py-8 md:px-[4.4rem] lg:px-[4.4rem]">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-20">
             <div>
-              <img
-                src="https://images.unsplash.com/photo-1731690415686-e68f78e2b5bd?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                className="rounded"
-                alt=""
-              />
+              <img src="/about.png" className="rounded" alt="" />
             </div>
             <div>
               <div className="max-w-lg md:max-w-none">
-                <h5 className="text-primary font-bold">About Us</h5>
-                <h2 className="text-2xl font-bold sm:text-[32px] leading-[38px] text-[#161c2d] py-5">
+                <h5 className="text-primary font-bold" data-aos="fade-down" data-aos-duration="2000">About Us</h5>
+                <h2 className="text-2xl font-bold lg:text-[37px] lg:leading-[45px] text-[#161c2d] py-5" data-aos="fade-down" data-aos-duration="2000">
                   We Provide Best Fiber Internet Service By Top Providers
                 </h2>
-                <p className="text-gray-700">
+                <p className="text-gray-700" data-aos="fade-down" data-aos-duration="2000">
                   We are affiliate and retail partners of AT&T, Xfinity and Comcast Fiber Internet service providers in the United states for:
                 </p>
                 <div className="flex lg:gap-20">
@@ -115,7 +97,7 @@ export default function Home() {
                     <li className="flex text-[#161c2d] text-[16px] items-center"><Check className="text-primary bg-purple-100 rounded-full mr-3 w-5 h-5" /> Great Customer Support</li>
                   </ul>
                 </div>
-                <Link href="tel:(855) 843-7329" className="bg-primary text-white px-5 py-4 rounded-md font-bold flex w-48 gap-2 items-center hover:animate-bounce-up-down"><Image src={'/phone.png'} alt="phone" width={18} height={18}/> (855) 843-7329</Link>
+                <Link href="tel:(855) 843-7329" className="bg-primary text-white px-5 py-4 rounded-md font-bold flex w-48 gap-2 items-center hover:animate-bounce-up-down" data-aos="fade-up" data-aos-duration="2000"><Image src={'/phone.png'} alt="phone" width={18} height={18} /> (855) 843-7329</Link>
               </div>
             </div>
           </div>
@@ -124,13 +106,10 @@ export default function Home() {
 
 
 
-
-
-
       <section className="bg-purple-50 lg:mt-16 lg:pb-16">
-        <div className="mx-auto max-w-screen-xl px-4 pt-8 sm:px-6 sm:pt-12 lg:px-8 lg:pt-20">
-          <h5 className="text-center text-[#6c41ff] font-bold">Our Packages</h5>
-          <h2 className="text-center py-10 text-[#161c2d] text-2xl lg:text-4xl font-extrabold">Xfinity Packages</h2>
+        <div className="mx-auto max-w-screen-xl px-4 pt-8 md:px-[4.4rem] sm:pt-12 lg:px-[4.4rem] lg:pt-20">
+          <h5 className="text-center text-[#6c41ff] font-bold" data-aos="fade-up" data-aos-duration="2000">Our Packages</h5>
+          <h2 className="text-center py-10 text-[#161c2d] text-2xl lg:text-4xl font-extrabold" data-aos="fade-down" data-aos-duration="2000">Xfinity Packages</h2>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-stretch md:grid-cols-3 md:gap-8">
             <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-xs bg-white">
               <div className="p-6 sm:px-8">
@@ -338,8 +317,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="mx-auto max-w-screen-xl px-4 pt-8 sm:px-6 sm:pt-12 lg:px-8">
-          <h2 className="text-center pb-10 text-[#161c2d] text-2xl lg:text-4xl font-extrabold">AT&T Packages</h2>
+        <div className="mx-auto max-w-screen-xl px-4 pt-8 md:px-[4.4rem] sm:pt-12 lg:px-8">
+          <h2 className="text-center pb-10 text-[#161c2d] text-2xl lg:text-4xl font-extrabold" data-aos="fade-down" data-aos-duration="2000">AT&T Packages</h2>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-stretch md:grid-cols-3 md:gap-8">
             <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-xs bg-white">
               <div className="p-6 sm:px-8">
@@ -547,8 +526,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-          <h2 className="text-center pb-10 text-[#161c2d] text-2xl lg:text-4xl font-extrabold">Spectrum Packages</h2>
+        <div className="mx-auto max-w-screen-xl px-4 py-8 md:px-[4.4rem] sm:py-12 lg:px-8">
+          <h2 className="text-center pb-10 text-[#161c2d] text-2xl lg:text-4xl font-extrabold" data-aos="fade-down" data-aos-duration="2000">Spectrum Packages</h2>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-stretch md:grid-cols-3 md:gap-8">
             <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-xs bg-white">
               <div className="p-6 sm:px-8">
@@ -760,9 +739,9 @@ export default function Home() {
 
 
       <section className="bg-primary py-10 lg:py-20">
-        <div className="mx-auto max-w-screen-xl lg:w-[1100px]">
-          <h5 className="text-center text-white text-bold">Authorized Dealers</h5>
-          <h2 className="text-center text-white text-2xl lg:text-4xl font-bold py-10">Our Authorized Dealers</h2>
+        <div className="mx-auto max-w-screen-xl">
+          <h5 className="text-center text-white text-bold" data-aos="fade-up" data-aos-duration="2000">Authorized Dealers</h5>
+          <h2 className="text-center text-white text-2xl lg:text-4xl font-bold py-5 lg:py-10" data-aos="fade-down" data-aos-duration="2000">Our Authorized Dealers</h2>
           <LogoSlider />
         </div>
       </section>
@@ -771,11 +750,11 @@ export default function Home() {
 
       <section className="bg-[#1f2124] py-10 lg:py-20">
         <div className="mx-auto max-w-screen-xl px-3 lg:px-0">
-          <h5 className="text-center text-white text-bold">Services</h5>
-          <h2 className="text-center text-white text-2xl lg:text-4xl font-bold py-10">Your Gateway to Premium Fiber Internet Services</h2>
-          <p className="text-white text-center lg:w-[800px] mx-auto">Discover our comprehensive range of top-notch fiber internet services designed to meet your needs and exceed your expectations. Explore now.</p>
+          <h5 className="text-center text-white text-bold" data-aos="fade-up" data-aos-duration="2000">Services</h5>
+          <h2 className="text-center text-white text-2xl lg:text-4xl font-bold py-10" data-aos="fade-down" data-aos-duration="2000">Your Gateway to Premium Fiber Internet Services</h2>
+          <p className="text-white text-center md:w-[800px] lg:w-[800px] mx-auto" data-aos="fade-down" data-aos-duration="2000">Discover our comprehensive range of top-notch fiber internet services designed to meet your needs and exceed your expectations. Explore now.</p>
         </div>
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:gap-8 mx-auto max-w-screen-xl mt-16 px-5 lg:px-16">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-4 lg:grid-cols-4 lg:gap-8 mx-auto max-w-screen-xl mt-16 px-5 md:px-16 lg:px-16">
           <div className="rounded-lg bg-primary text-center p-7">
             <Wifi className="text-primary bg-white rounded-md w-14 h-14 p-2 mx-auto" />
             <h3 className="font-bold text-white text-2xl py-5">Cable Internet</h3>
@@ -803,9 +782,9 @@ export default function Home() {
 
 
       <section className="bg-purple-50">
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 mx-auto max-w-screen-xl px-16 py-20">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2 lg:gap-8 mx-auto max-w-screen-xl px-5 md:px-[4.4rem] md:py-20 py-10 lg:px-16 lg:py-20">
           <div className="">
-            <h5 className="text-primary font-bold">Contact Us</h5>
+            <h5 className="text-primary font-bold" data-aos="fade-up" data-aos-duration="2000">Contact Us</h5>
             <h2 className="text-[20px] lg:text-[43px] font-bold text-[#161c2d] py-7 leading-[1.2]">Connect with Us, Your Feedback Matters to Us.</h2>
             <p className="text-[#161c2d]">We value your input and inquiries. Please feel free to reach out to us. We’re here to assist you anytime you need us.</p>
             <ul className="py-5 leading-[3]">
@@ -904,19 +883,19 @@ export default function Home() {
 
 
       <footer className="bg-[#1f2124]">
-        <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-10 lg:pt-20">
+        <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 md:px-[4.4rem] lg:px-10 lg:pt-20">
           <div className="grid grid-cols-1 gap-1 lg:grid-cols-3">
             <div>
-              <div className="flex justify-center text-teal-600 sm:justify-start">
+              <div className="flex justify-start text-teal-600 sm:justify-start">
                 <Image src={'/logo.png'} alt="logo" width={190} height={55} />
               </div>
-              <p className="mt-6 max-w-md text-center leading-relaxed text-white sm:max-w-xs sm:text-left">
+              <p className="mt-6 max-w-md text-left leading-relaxed text-white sm:max-w-xs sm:text-left">
                 We are affiliate and retail partners of AT&T, Xfinity and Comcast Fiber Internet service providers in the United states.
               </p>
             </div>
 
             <div className="grid grid-cols-1 gap-0 sm:grid-cols-2 md:grid-cols-3 lg:col-span-2">
-              <div className="text-center sm:text-left">
+              <div className="text-left sm:text-left pt-10">
                 <p className="text-2xl font-bold text-white">Company</p>
                 <ul className="mt-8 space-y-4 text-sm">
                   <li>
@@ -940,7 +919,7 @@ export default function Home() {
                 </ul>
               </div>
 
-              <div className="text-center sm:text-left">
+              <div className="text-left sm:text-left pt-10">
                 <p className="text-2xl font-bold text-white">Service</p>
                 <ul className="mt-8 space-y-4 text-sm">
                   <li>
@@ -957,7 +936,7 @@ export default function Home() {
                 </ul>
               </div>
 
-              <div className="text-center sm:text-left">
+              <div className="text-left sm:text-left pt-10">
                 <p className="text-2xl font-bold text-white">Subscribe Our Newsletter</p>
                 <form className="mt-6 w-full">
                   <label htmlFor="UserEmail" className="sr-only"> Email </label>
