@@ -1,6 +1,5 @@
 import { Sen } from "next/font/google";
 import "./globals.css";
-import 'aos/dist/aos.css';
 
 const sen = Sen({
   variable: "--font-sen",
