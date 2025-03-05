@@ -1,5 +1,5 @@
 "use client"
-import { Check, FacebookIcon, Globe, Mail, MapPin, Monitor, Phone, Twitter, Wifi, Youtube } from "lucide-react";
+import { Check, FacebookIcon, Globe, Mail, MapPin, Monitor, Phone, Router, Twitter, Wifi, Youtube } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import LogoSlider from "./_components/LogoSlider";
@@ -15,7 +15,6 @@ export default function Home() {
           <div className="flex h-16 items-center justify-between">
             <div className="md:flex md:items-center md:gap-12">
               <Link className="block text-white font-extrabold text-[17px] md:text-[13px] lg:text-2xl" href="/">
-                {/* <Image src={'/logo.png'} alt='logo' width={190} height={185} /> */}
                 LISAM SOLUTIONS LLC
               </Link>
             </div>
@@ -23,23 +22,23 @@ export default function Home() {
               <nav aria-label="Global">
                 <ul className="flex items-center md:gap-5 lg:gap-16 font-bold">
                   <li>
-                    <a className="text-primary transition hover:text-primary md:text-sm" href="#"> Home </a>
+                    <a className="text-primary transition hover:text-primary md:text-1xl" href="#"> Home </a>
                   </li>
                   <li>
-                    <a className="text-white transition hover:text-primary md:text-sm" href="#"> About Us </a>
+                    <a className="text-white transition hover:text-primary md:text-1xl" href="#"> About Us </a>
                   </li>
                   <li>
-                    <a className="text-white transition hover:text-primary md:text-sm" href="#"> Services </a>
+                    <a className="text-white transition hover:text-primary md:text-1xl" href="#"> Services </a>
                   </li>
                   <li>
-                    <a className="text-white transition hover:text-primary md:text-sm" href="#"> Contact Us </a>
+                    <a className="text-white transition hover:text-primary md:text-1xl" href="#"> Contact Us </a>
                   </li>
                 </ul>
               </nav>
             </div>
             <div className="flex items-center gap-4">
               <div className="hidden sm:flex sm:gap-4">
-                <a className="rounded-md bg-primary md:px-2 md:py-2 lg:px-8 lg:py-4 font-bold text-white shadow-sm flex gap-2 items-center hover:animate-bounce-up-down md:text-sm" href="tel:(888)-845-0301">
+                <a className="rounded-md bg-primary md:px-2 md:py-2 lg:px-8 lg:py-4 font-bold text-white shadow-sm flex gap-2 items-center hover:animate-bounce-up-down md:text-sm" href="tel:+1-(888)-845-0301">
                   <Image src={'/phone.png'} alt="phone" width={18} height={18} /> (888)-845-0301
                 </a>
               </div>
@@ -66,11 +65,11 @@ export default function Home() {
 
       <Hero />
 
-      <section className="bg-white lg:mt-20">
+      <section className="bg-white lg:py-20">
         <div className="mx-auto max-w-screen-xl px-4 py-8 md:px-[4.4rem] lg:px-[4.4rem]">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-5">
             <div>
-              <Image src='./about.PNG' alt='about' width={600} height={600}/>
+              <Image src='./about.PNG' alt='about' width={600} height={600} />
             </div>
             <div>
               <div className="max-w-lg md:max-w-none">
@@ -93,7 +92,7 @@ export default function Home() {
                     <li className="flex text-[#161c2d] lg:text-[16px] md:text-[13px] items-center"><Check className="text-primary bg-purple-100 rounded-full mr-3 w-5 h-5" /> Great Customer Support</li>
                   </ul>
                 </div>
-                <Link href="tel:(888)-845-0301" className="bg-primary text-white px-5 py-3 lg:py-4 md:py-3 rounded-md font-bold flex w-48 gap-2 items-center hover:animate-bounce-up-down"><Image src={'/phone.png'} alt="phone" width={18} height={18} /> (888)-845-0301</Link>
+                <Link href="tel:+1-(888)-845-0301" className="bg-primary text-white px-5 py-3 lg:py-4 md:py-3 rounded-md font-bold flex w-48 gap-2 items-center hover:animate-bounce-up-down"><Image src={'/phone.png'} alt="phone" width={18} height={18} /> (888)-845-0301</Link>
               </div>
             </div>
           </div>
@@ -102,7 +101,7 @@ export default function Home() {
 
 
 
-      <section className="bg-purple-50 lg:mt-16 lg:pb-16">
+      <section className="bg-purple-50 lg:pb-16">
         <div className="mx-auto max-w-screen-xl px-4 pt-8 md:px-[4.4rem] sm:pt-12 lg:px-8 lg:pt-20">
           <h5 className="text-center text-[#6c41ff] font-bold">Our Packages</h5>
           <h2 className="text-center py-10 text-[#161c2d] text-2xl lg:text-4xl font-extrabold">Xfinity Packages</h2>
@@ -752,7 +751,7 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-4 lg:grid-cols-4 lg:gap-8 mx-auto max-w-screen-xl mt-16 px-5 md:px-16 lg:px-16">
           <div className="rounded-lg bg-primary text-center p-7 md:p-3 lg:p-7">
-            <Wifi className="text-primary bg-white rounded-md w-14 h-14 p-2 mx-auto" />
+            <Router className="text-primary bg-white rounded-md w-14 h-14 p-2 mx-auto" />
             <h3 className="font-bold text-white text-2xl md:text-[20px] lg:text-2xl py-5">Cable Internet</h3>
             <p className="text-white text-sm md:text-sm lg:text-[16px]">Fastest cable Internet services in your area, call us now</p>
           </div>
@@ -780,11 +779,11 @@ export default function Home() {
           <div className="">
             <h5 className="text-primary font-bold">Contact Us</h5>
             <h2 className="text-[20px] lg:text-[43px] font-bold text-[#161c2d] py-7 leading-[1.2]">Connect with Us, Your Feedback Matters to Us.</h2>
-            <p className="text-[#161c2d]">We value your input and inquiries. Please feel free to reach out to us. We’re here to assist you anytime you need us.</p>
+            <p className="text-gray-800">We value your input and inquiries. Please feel free to reach out to us. We’re here to assist you anytime you need us.</p>
             <ul className="py-5 leading-[3]">
-              <li className="flex gap-2 items-center"><Phone className="text-primary" /> (888)-845-0301</li>
-              <li className="flex gap-2 items-center"><Mail className="text-primary" /> support@internetcablecompanies.com</li>
-              <li className="flex gap-2 items-center"><MapPin className="text-primary" /> 14402 W Bellfort St apt 132 Sugarland TX 77498</li>
+              <li className="flex gap-2 items-center"><Phone className="text-primary" /> <Link href="tel:+1-(888)-845-0301" className="text-gray-800">(888)-845-0301</Link></li>
+              <li className="flex gap-2 items-center"><Mail className="text-primary" /> <Link href="mailto:support@internetcablecompanies.com" className="text-gray-800">support@internetcablecompanies.com</Link></li>
+              <li className="flex gap-2 items-center"><MapPin className="text-primary" /> <p className="text-gray-800">14402 W Bellfort St apt 132 Sugarland TX 77498</p></li>
             </ul>
             <div className="flex gap-5">
               <FacebookIcon className="bg-primary rounded-md text-white p-1 w-8 h-8 cursor-pointer hover:scale-110 transition" />
@@ -833,7 +832,8 @@ export default function Home() {
               </div>
               <div className="col-span-6">
                 <label htmlFor="Services" className="block text-sm font-medium text-gray-700">SERVICES</label>
-                <select name="" id="Services" className="bg-[#E9E9E9] w-full p-3 rounded-md mt-1">
+                <select name="" id="Services" className="bg-[#E9E9E9] w-full p-3 rounded-md mt-1 text-gray-700">
+                  <option value="Choose Service">Choose Service</option>
                   <option value="Cable Internet">Cable Internet</option>
                   <option value="Fiber Internet">Fiber Internet</option>
                   <option value="Wireless">Wireless</option>
@@ -856,7 +856,7 @@ export default function Home() {
                     required
                   />
                   <span className="text-sm text-gray-700">
-                    By clicking the send message button and submitting this form, I acknowledge that I permit JAMAL PRIME, INC. to use my information provided to search for their best current offers for telecom services. I also allow JAMAL PRIME, INC. express consent to contact me at the number and/or email address I have provided above with automated technology in relation to this inquiry via phone or e-mail.
+                    By clicking the send message button and submitting this form, I acknowledge that I permit LISAM SOLUTIONS LLC. to use my information provided to search for their best current offers for telecom services. I also allow LISAM SOLUTIONS LLC. express consent to contact me at the number and/or email address I have provided above with automated technology in relation to this inquiry via phone or e-mail.
                   </span>
                 </label>
               </div>
@@ -956,7 +956,7 @@ export default function Home() {
           </div>
           <div className="mt-12 border-t border-gray-100 pt-6">
             <div className="text-center sm:text-left">
-              <p className="mt-4 text-sm text-white text-center sm:mt-0">2025 All right reserved by LISAM SOLUTIONS LLC.</p>
+              <p className="mt-4 text-sm text-white text-center sm:mt-0">2025 All right reserved by <Link href="/" className="text-white">LISAM SOLUTIONS LLC</Link>.</p>
             </div>
           </div>
         </div>

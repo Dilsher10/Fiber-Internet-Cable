@@ -15,7 +15,7 @@ const Hero = () => {
           >
             Discover seamless connectivity and top-tier service with LISAM SOLUTIONS LLC. We proudly offer the best in telecom solutions from leading providers like Spectrum, HughesNet, AT&T, Xfinity, and more. Whether you need high-speed internet, reliable phone service, or premium TV entertainment, we’ve got you covered.
           </p>
-          <Link href="tel:(888)-845-0301" className="bg-primary py-3 lg:py-4 md:py-3 md:w-[180px] text-center justify-center rounded-md text-white font-bold lg:w-[210px] flex gap-2 items-center hover:animate-bounce-up-down">
+          <Link href="tel:+1-(888)-845-0301" className="bg-primary py-3 lg:py-4 md:py-3 md:w-[180px] text-center justify-center rounded-md text-white font-bold lg:w-[210px] flex gap-2 items-center hover:animate-bounce-up-down">
             <Image src={'/phone.png'} alt="phone" width={18} height={18} /> (888)-845-0301
           </Link>
         </div>
