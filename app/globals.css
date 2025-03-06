@@ -30,3 +30,29 @@ body {
   justify-content: center;
 }
 
+
+.privacyPolicy h2{
+  font-weight: bold;
+  padding-bottom: 20px;
+  color: #0a0a0a;
+  font-size: 18px;
+}
+
+
+.privacyPolicy p{
+  padding-bottom: 20px;
+  color: #374151;
+  font-size: 17px;
+}
+
+.privacyPolicy ul{
+  list-style:disc;
+  color: #374151;
+  padding-left: 40px;
+}
+
+.privacyPolicy ul li{
+  padding-bottom: 20px;
+  color: #374151;
+  font-size: 17px;
+}

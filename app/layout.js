@@ -1,5 +1,7 @@
 import { Sen } from "next/font/google";
 import "./globals.css";
+import { ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
 const sen = Sen({
   variable: "--font-sen",
@@ -18,6 +20,7 @@ export default function RootLayout({ children }) {
         className={`${sen.variable} antialiased`}
       >
         {children}
+        <ToastContainer />
       </body>
     </html>
   );
