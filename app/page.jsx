@@ -16,7 +16,6 @@ export default function Home() {
   const [service, setService] = useState("");
   const [message, setMessage] = useState("");
 
-
   const handleSubmit = (event) => {
     event.preventDefault();
 

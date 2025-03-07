@@ -1,10 +1,8 @@
 import React from 'react';
 import Navbar from '../_components/Navbar';
-import Link from 'next/link';
-import Image from 'next/image';
 import Footer from '../_components/Footer';
 
-const page = () => {
+const PrivacyPolicy = () => {
     return (
         <>
             <Navbar />
@@ -578,4 +576,4 @@ const page = () => {
     )
 }
 
-export default page
+export default PrivacyPolicy;

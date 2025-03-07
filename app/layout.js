@@ -11,6 +11,9 @@ const sen = Sen({
 export const metadata = {
   title: "LISAM SOLUTIONS LLC",
   description: "LISAM SOLUTIONS LLC",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
