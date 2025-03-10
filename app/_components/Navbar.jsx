@@ -19,13 +19,13 @@ const Navbar = () => {
                                     <Link className="text-primary transition hover:text-primary md:text-1xl" href="/"> Home </Link>
                                 </li>
                                 <li>
-                                    <Link className="text-white transition hover:text-primary md:text-1xl" href="#aboutUs"> About Us </Link>
+                                    <Link className="text-white transition hover:text-primary md:text-1xl" href="#about"> About Us </Link>
                                 </li>
                                 <li>
-                                    <Link className="text-white transition hover:text-primary md:text-1xl" href="#Services"> Services </Link>
+                                    <Link className="text-white transition hover:text-primary md:text-1xl" href="#services"> Services </Link>
                                 </li>
                                 <li>
-                                    <Link className="text-white transition hover:text-primary md:text-1xl" href="#contactUs"> Contact Us </Link>
+                                    <Link className="text-white transition hover:text-primary md:text-1xl" href="#contact"> Contact Us </Link>
                                 </li>
                             </ul>
                         </nav>
