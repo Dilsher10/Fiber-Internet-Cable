@@ -749,7 +749,36 @@ export default function Home() {
       </section>
 
 
-      
+      <section className="bg-[#1f2124] py-10 lg:py-20" id="Services">
+        <div className="mx-auto max-w-screen-xl px-3 lg:px-0">
+          <h5 className="text-center text-white text-bold">Services</h5>
+          <h2 className="text-center text-white text-2xl lg:text-4xl font-bold py-10">Your Gateway to Premium Fiber Internet Services</h2>
+          <p className="text-white text-center md:w-[800px] lg:w-[800px] mx-auto">Discover our comprehensive range of top-notch fiber internet services designed to meet your needs and exceed your expectations. Explore now.</p>
+        </div>
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-4 lg:grid-cols-4 lg:gap-8 mx-auto max-w-screen-xl mt-16 px-5 md:px-16 lg:px-16">
+          <div className="rounded-lg bg-primary text-center p-7 md:p-3 lg:p-7">
+            <Router className="text-primary bg-white rounded-md w-14 h-14 p-2 mx-auto" />
+            <h3 className="font-bold text-white text-2xl md:text-[20px] lg:text-2xl py-5">Cable Internet</h3>
+            <p className="text-white text-sm md:text-sm lg:text-[16px]">Fastest cable Internet services in your area, call us now</p>
+          </div>
+          <div className="rounded-lg bg-primary text-center p-7 md:p-3 lg:p-7">
+            <Globe className="text-primary bg-white rounded-md w-14 h-14 p-2 mx-auto" />
+            <h3 className="font-bold text-white text-2xl md:text-[20px] lg:text-2xl py-5">Fiber Internet</h3>
+            <p className="text-white text-sm md:text-sm lg:text-[16px]">Get affordable pricing with amazing discounts.  </p>
+          </div>
+          <div className="rounded-lg bg-primary text-center p-7 md:p-3 lg:p-7">
+            <Wifi className="text-primary bg-white rounded-md w-14 h-14 p-2 mx-auto" />
+            <h3 className="font-bold text-white text-2xl md:text-[20px] lg:text-2xl py-5">Wireless</h3>
+            <p className="text-white text-sm md:text-sm lg:text-[16px]">Fastest Wireless Services to change your world</p>
+          </div>
+          <div className="rounded-lg bg-primary text-center p-7 md:p-3 lg:p-7">
+            <Monitor className="text-primary bg-white rounded-md w-14 h-14 p-2 mx-auto" />
+            <h3 className="font-bold text-white text-2xl md:text-[20px] lg:text-2xl py-5">TV Service</h3>
+            <p className="text-white text-sm md:text-sm lg:text-[16px]">Call now for fast ever TV services by top providers</p>
+          </div>
+        </div>
+      </section>
+
 
       <section className="bg-purple-50" id="contactUs">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2 lg:gap-8 mx-auto max-w-screen-xl px-5 md:px-[4.4rem] md:py-20 py-10 lg:px-16 lg:py-20">
