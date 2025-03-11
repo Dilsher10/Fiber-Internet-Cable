@@ -780,7 +780,119 @@ export default function Home() {
       </section>
 
 
-      
+      <section className="bg-purple-50" id="contactUs">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2 lg:gap-8 mx-auto max-w-screen-xl px-5 md:px-[4.4rem] md:py-20 py-10 lg:px-16 lg:py-20">
+          <div className="">
+            <h5 className="text-primary font-bold">Contact Us</h5>
+            <h2 className="text-[20px] lg:text-[43px] font-bold text-[#161c2d] py-7 leading-[1.2]">Connect with Us, Your Feedback Matters to Us.</h2>
+            <p className="text-gray-800">We value your input and inquiries. Please feel free to reach out to us. We’re here to assist you anytime you need us.</p>
+            <ul className="py-5 leading-[3]">
+              <li className="flex gap-2 items-center"><Phone className="text-primary" /> <Link href="tel:+1-(888)-845-0301" className="text-gray-800">(888)-845-0301</Link></li>
+              <li className="flex gap-2 items-center"><Mail className="text-primary" /> <Link href="mailto:support@internetcablecompanies.com" className="text-gray-800">support@internetcablecompanies.com</Link></li>
+              <li className="flex gap-2 items-center"><MapPin className="text-primary" /> <p className="text-gray-800">14402 W Bellfort St apt 132 Sugarland TX 77498</p></li>
+            </ul>
+            <div className="flex gap-5">
+              <FacebookIcon className="bg-primary rounded-md text-white p-1 w-8 h-8 cursor-pointer hover:scale-110 transition" />
+              <Twitter className="bg-primary rounded-md text-white p-1 w-8 h-8 cursor-pointer hover:scale-110 transition" />
+              <Youtube className="bg-primary rounded-md text-white p-1 w-8 h-8 cursor-pointer hover:scale-110 transition" />
+            </div>
+          </div>
+          <div className="">
+            <form onSubmit={handleSubmit} className="grid grid-cols-6 gap-6">
+              <div className="col-span-6">
+                <label htmlFor="Name" className="block text-sm font-medium text-gray-700">
+                  NAME
+                </label>
+                <input
+                  type="text"
+                  id="Name"
+                  name="name"
+                  placeholder="Name"
+                  value={name}
+                  className="mt-1 w-full rounded-md border-gray-200 bg-[#E9E9E9] text-sm text-gray-700 shadow-xs p-3"
+                  onChange={(e) => {
+                    const value = e.target.value;
+                    if (/^[A-Za-z\s]*$/.test(value)) {
+                      setName(value);
+                    }
+                  }}
+                  required
+                />
+              </div>
+              <div className="col-span-6">
+                <label htmlFor="Phone" className="block text-sm font-medium text-gray-700">
+                  PHONE
+                </label>
+                <input
+                  type="text"
+                  id="Phone"
+                  name="phone"
+                  placeholder="Phone"
+                  className="mt-1 w-full rounded-md border-gray-200 bg-[#E9E9E9] text-sm text-gray-700 shadow-xs p-3"
+                  value={phone}
+                  onChange={(e) => {
+                    const value = e.target.value;
+                    if (/^[\d+\-()]*$/.test(value)) {
+                      setPhone(value);
+                    }
+                  }}
+                  required
+                />
+              </div>
+              <div className="col-span-6">
+                <label htmlFor="Email" className="block text-sm font-medium text-gray-700">EMAIL</label>
+                <input
+                  type="email"
+                  id="Email"
+                  name="email"
+                  placeholder="Email"
+                  className="mt-1 w-full rounded-md border-gray-200 bg-[#E9E9E9] text-sm text-gray-700 shadow-xs p-3"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
+              </div>
+              <div className="col-span-6">
+                <label htmlFor="Services" className="block text-sm font-medium text-gray-700">SERVICES</label>
+                <select id="Services" className="bg-[#E9E9E9] w-full p-3 rounded-md mt-1 text-gray-700" value={service} onChange={(e) => setService(e.target.value)}>
+                  <option value="Choose Service">Choose Service</option>
+                  <option value="Cable Internet">Cable Internet</option>
+                  <option value="Fiber Internet">Fiber Internet</option>
+                  <option value="Wireless">Wireless</option>
+                  <option value="TV Service">TV Service</option>
+                </select>
+              </div>
+              <div className="col-span-6">
+                <label htmlFor="Message" className="block text-sm font-medium text-gray-700">
+                  MESSAGE
+                </label>
+                <textarea id="Message" placeholder="Message" rows={4} className="w-full bg-[#E9E9E9] p-3 rounded-md mt-1" value={message} onChange={(e) => setMessage(e.target.value)} required></textarea>
+              </div>
+              <div className="col-span-6">
+                <label htmlFor="MarketingAccept" className="flex gap-4">
+                  <input
+                    type="checkbox"
+                    id="MarketingAccept"
+                    name="marketing_accept"
+                    className="size-5 rounded-md border-gray-200 bg-white shadow-xs"
+                    required
+                  />
+                  <span className="text-sm text-gray-700">
+                    By clicking the send message button and submitting this form, I acknowledge that I permit LISAM SOLUTIONS LLC. to use my information provided to search for their best current offers for telecom services. I also allow LISAM SOLUTIONS LLC. express consent to contact me at the number and/or email address I have provided above with automated technology in relation to this inquiry via phone or e-mail.
+                  </span>
+                </label>
+              </div>
+              <div className="col-span-6">
+                <button
+                  className="inline-block shrink-0 rounded-md border border-primary bg-primary px-12 py-3 text-lg font-bold text-white transition hover:bg-transparent hover:text-primary focus:ring-3 focus:outline-hidden w-full" type="submit"
+                >
+                  Submit Now
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
 
 
       <Footer />
