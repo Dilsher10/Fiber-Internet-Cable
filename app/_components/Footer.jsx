@@ -40,7 +40,7 @@ const Footer = () => {
                             </ul>
                         </div>
 
-                        <div className="text-left sm:text-left">
+                        <div className="text-left sm:text-left gap-">
                             <p className="text-2xl font-bold text-white mt-8 lg:mt-0 md:mt-0">Service</p>
                             <ul className="mt-8 space-y-4 text-sm">
                                 <li>
@@ -53,6 +53,9 @@ const Footer = () => {
                                 </li>
                                 <li>
                                     <Link className="text-white text-[17px] transition" href="#"> TV Service </Link>
+                                </li>
+                                <li>
+                                    <Link className="text-white text-[17px] transition" href="/blogs"> Blogs </Link>
                                 </li>
                             </ul>
                         </div>

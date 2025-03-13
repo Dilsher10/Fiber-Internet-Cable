@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Navbar = () => {
     return (
-        <header className="absolute z-10 w-full mt-5 lg:mt-5">
+        <header className="w-full bg-[#1f2124] py-4">
             <div className="mx-auto max-w-screen-xl px-4 md:px-[4.4rem] lg:px-[4.4rem]">
                 <div className="flex h-16 items-center justify-between">
                     <div className="md:flex md:items-center md:gap-12">
@@ -23,6 +23,9 @@ const Navbar = () => {
                                 </li>
                                 <li>
                                     <Link className="text-white transition hover:text-primary md:text-1xl" href="#Services"> Services </Link>
+                                </li>
+                                <li>
+                                    <Link className="text-white transition hover:text-primary md:text-1xl" href="/blogs"> Blogs </Link>
                                 </li>
                                 <li>
                                     <Link className="text-white transition hover:text-primary md:text-1xl" href="#contactUs"> Contact Us </Link>

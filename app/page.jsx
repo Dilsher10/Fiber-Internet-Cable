@@ -7,7 +7,7 @@ import Navbar from "./_components/Navbar";
 import Footer from "./_components/Footer";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import { toast } from 'react-toastify';
+import { useRouter } from 'next/navigation'
 
 export default function Home() {
   const [name, setName] = useState("");
@@ -15,6 +15,9 @@ export default function Home() {
   const [email, setEmail] = useState("");
   const [service, setService] = useState("");
   const [message, setMessage] = useState("");
+
+
+  const router = useRouter()
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -53,7 +56,8 @@ export default function Home() {
     setService("");
     setMessage("");
 
-    toast.success("Submitted Successfully!");
+    router.push('/thankyou');
+
   };
 
 
