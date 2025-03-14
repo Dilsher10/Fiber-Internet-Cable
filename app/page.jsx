@@ -132,7 +132,616 @@ export default function Home() {
         </div>
       </section>
 
-      
+      <section className="bg-purple-50 lg:pb-16">
+        <div className="mx-auto max-w-screen-xl px-4 pt-8 md:px-[4.4rem] sm:pt-12 lg:px-8 lg:pt-20">
+          <h5 className="text-center text-[#6c41ff] font-bold">Our Packages</h5>
+          <h2 className="text-center py-10 text-[#161c2d] text-2xl lg:text-4xl font-extrabold">Xfinity Packages</h2>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-stretch md:grid-cols-3 md:gap-2 lg:gap-8">
+            <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-xs bg-white">
+              <div className="p-6 px-8 md:p-2 md:px-4 lg:p-6 lg:px-8">
+                <a
+                  className="block rounded-md border border-[#1f2124] bg-[#1f2124] px-3 py-1.5 lg:py-2.5 text-left text-lg font-bold text-white focus:ring-3 focus:outline-hidden sm:mt-2"
+                  href="#"
+                >
+                  Connect More
+                </a>
+                <h2 className="text-lg md:text-sm font-extrabold text-gray-900 my-5">
+                  Price: $35.00/month
+                  <span className="sr-only">Plan</span>
+                </h2>
+                <p className="text-gray-800 font-bold md:text-[13px] lg:text-[18px]">Speed: Up to 200 Mbps download, 10 Mbps upload</p>
+              </div>
+              <div className="p-6 px-8 md:p-2 md:px-4 lg:p-6 lg:px-8">
+                <ul className="mt-2 space-y-5 sm:mt-0">
+                  <li className="flex items-center gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="size-11 text-indigo-700"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                    <span className="text-gray-700 md:text-sm"> Suitable for everyday activities like browsing, streaming, and video conferencing. </span>
+                  </li>
+
+                  <li className="flex items-center gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="size-5 text-indigo-700"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+
+                    <span className="text-gray-700 md:text-sm"> No term contract required. </span>
+                  </li>
+
+                  <li className="flex items-center gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="size-11 text-indigo-700"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+
+                    <span className="text-gray-700 md:text-sm"> Includes a $10/month discount for automatic payments and paperless billing. </span>
+                  </li>
+                </ul>
+                <a
+                  className="mt-4 block rounded-md border border-primary bg-primary px-3 py-1.5 lg:py-2.5 text-center text-lg font-bold text-white hover:bg-transparent hover:text-primary focus:ring-3 focus:outline-hidden sm:mt-6"
+                  href="#"
+                >
+                  Order Now
+                </a>
+              </div>
+            </div>
+            <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-xs bg-white">
+              <div className="p-6 px-8 md:p-2 md:px-4 lg:p-6 lg:px-8">
+                <a
+                  className="block rounded-md border border-[#1f2124] bg-[#1f2124] px-3 py-1.5 lg:py-2.5 text-left text-lg font-bold text-white focus:ring-3 focus:outline-hidden sm:mt-2"
+                  href="#"
+                >
+                  Superfast
+                </a>
+                <h2 className="text-lg md:text-sm font-extrabold text-gray-900 my-5">
+                  Price: $60.00/month
+                  <span className="sr-only">Plan</span>
+                </h2>
+                <p className="text-gray-800 font-bold md:text-[13px] lg:text-[18px]">Speed: Up to 800 Mbps download, 20 Mbps upload</p>
+              </div>
+              <div className="p-6 px-8 md:p-2 md:px-4 lg:p-6 lg:px-8">
+                <ul className="mt-2 space-y-5 sm:mt-0">
+                  <li className="flex items-center gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="size-11 text-indigo-700"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                    <span className="text-gray-700 md:text-sm"> Ideal for households with multiple devices, supporting 4K streaming and online gaming. </span>
+                  </li>
+
+                  <li className="flex items-center gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="size-5 text-indigo-700"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+
+                    <span className="text-gray-700 md:text-sm"> 12-month agreement required. </span>
+                  </li>
+
+                  <li className="flex items-center gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="size-11 text-indigo-700"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+
+                    <span className="text-gray-700 md:text-sm"> Includes a $10/month discount for automatic payments and paperless billing. </span>
+                  </li>
+                </ul>
+                <a
+                  className="mt-4 block rounded-md border border-primary bg-primary px-3 py-1.5 lg:py-2.5 text-center text-lg font-bold text-white hover:bg-transparent hover:text-primary focus:ring-3 focus:outline-hidden sm:mt-6"
+                  href="#"
+                >
+                  Order Now
+                </a>
+              </div>
+            </div>
+            <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-xs bg-white">
+              <div className="p-6 px-8 md:p-2 md:px-4 lg:p-6 lg:px-8">
+                <a
+                  className="block rounded-md border border-[#1f2124] bg-[#1f2124] px-3 py-1.5 lg:py-2.5 text-left text-lg font-bold text-white focus:ring-3 focus:outline-hidden sm:mt-2"
+                  href="#"
+                >
+                  Gigabit Extra
+                </a>
+                <h2 className="text-lg md:text-sm font-extrabold text-gray-900 my-5">
+                  Price: $80.00/month
+                  <span className="sr-only">Plan</span>
+                </h2>
+                <p className="text-gray-800 font-bold md:text-[13px] lg:text-[18px]">Speed: Up to 1,200 Mbps download, 35 Mbps upload</p>
+              </div>
+              <div className="p-6 px-8 md:p-2 md:px-4 lg:p-6 lg:px-8">
+                <ul className="mt-2 space-y-5 sm:mt-0">
+                  <li className="flex items-center gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="size-11 text-indigo-700"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                    <span className="text-gray-700 md:text-sm"> Best for large households or heavy internet users who need ultra-fast speeds for activities like HD streaming and large file downloads. </span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="size-5 text-indigo-700"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+
+                    <span className="text-gray-700 md:text-sm"> No term contract. </span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="size-11 text-indigo-700"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                    <span className="text-gray-700 md:text-sm"> Includes a $10/month discount for automatic payments and paperless billing. </span>
+                  </li>
+                </ul>
+                <a
+                  className="mt-4 block rounded-md border border-primary bg-primary px-3 py-1.5 lg:py-2.5 text-center text-lg font-bold text-white hover:bg-transparent hover:text-primary focus:ring-3 focus:outline-hidden sm:mt-6"
+                  href="#"
+                >
+                  Order Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="mx-auto max-w-screen-xl px-4 pt-8 md:px-[4.4rem] sm:pt-12 lg:px-8">
+          <h2 className="text-center pb-10 text-[#161c2d] text-2xl lg:text-4xl font-extrabold">AT&T Packages</h2>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-stretch md:grid-cols-3 md:gap-2 md:gap-8">
+            <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-xs bg-white">
+              <div className="p-6 px-8 md:p-2 md:px-4 lg:p-6 lg:px-8">
+                <a
+                  className="block rounded-md border border-[#1f2124] bg-[#1f2124] px-3 py-2.5 text-left text-lg font-bold text-white focus:ring-3 focus:outline-hidden sm:mt-2"
+                  href="#"
+                >
+                  Essential Plan
+                </a>
+                <h2 className="text-lg md:text-sm font-extrabold text-gray-900 my-5">
+                  Price: $25.00/month
+                  <span className="sr-only">Plan</span>
+                </h2>
+                <p className="text-gray-800 font-bold md:text-[13px] lg:text-[18px]">Speed: Up to 100 Mbps download, 5 Mbps upload</p>
+              </div>
+              <div className="p-6 px-8 md:p-2 md:px-4 lg:p-6 lg:px-8">
+                <ul className="mt-2 space-y-5 sm:mt-0">
+                  <li className="flex items-center gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="size-11 text-indigo-700"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                    <span className="text-gray-700 md:text-sm"> Suitable for everyday activities like browsing, streaming, and video conferencing. </span>
+                  </li>
+
+                  <li className="flex items-center gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="size-5 text-indigo-700"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+
+                    <span className="text-gray-700 md:text-sm"> No term contract required. </span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="size-11 text-indigo-700"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+
+                    <span className="text-gray-700 md:text-sm"> Includes a $10/month discount for automatic payments and paperless billing. </span>
+                  </li>
+                </ul>
+                <a
+                  className="mt-4 block rounded-md border border-primary bg-primary px-3 py-1.5 lg:py-2.5 text-center text-lg font-bold text-white hover:bg-transparent hover:text-primary focus:ring-3 focus:outline-hidden sm:mt-6"
+                  href="#"
+                >
+                  Order Now
+                </a>
+              </div>
+            </div>
+            <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-xs bg-white">
+              <div className="p-6 px-8 md:p-2 md:px-4 lg:p-6 lg:px-8">
+                <a
+                  className="block rounded-md border border-[#1f2124] bg-[#1f2124] px-3 py-1.5 lg:py-2.5 text-left text-lg font-bold text-white focus:ring-3 focus:outline-hidden sm:mt-2"
+                  href="#"
+                >
+                  Preferred Plan
+                </a>
+                <h2 className="text-lg md:text-sm font-extrabold text-gray-900 my-5">
+                  Price: $50.00/month
+                  <span className="sr-only">Plan</span>
+                </h2>
+                <p className="text-gray-800 font-bold md:text-[13px] lg:text-[18px]">Speed: Up to 500 Mbps download, 50 Mbps upload</p>
+              </div>
+              <div className="p-6 px-8 md:p-2 md:px-4 lg:p-6 lg:px-8">
+                <ul className="mt-2 space-y-5 sm:mt-0">
+                  <li className="flex items-center gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="size-11 text-indigo-700"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                    <span className="text-gray-700 md:text-sm"> Ideal for moderate usage such as HD streaming, online gaming, and remote working. </span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="size-5 text-indigo-700"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+
+                    <span className="text-gray-700 md:text-sm"> No term contract required. </span>
+                  </li>
+
+                  <li className="flex items-center gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="size-11 text-indigo-700"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+
+                    <span className="text-gray-700 md:text-sm"> Includes a $10/month discount for automatic payments and paperless billing. </span>
+                  </li>
+                </ul>
+                <a
+                  className="mt-4 block rounded-md border border-primary bg-primary px-3 py-1.5 lg:py-2.5 text-center text-lg font-bold text-white hover:bg-transparent hover:text-primary focus:ring-3 focus:outline-hidden sm:mt-6"
+                  href="#"
+                >
+                  Order Now
+                </a>
+              </div>
+            </div>
+            <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-xs bg-white">
+              <div className="p-6 px-8 md:p-2 md:px-4 lg:p-6 lg:px-8">
+                <a
+                  className="block rounded-md border border-[#1f2124] bg-[#1f2124] px-3 py-1.5 lg:py-2.5 text-left text-lg font-bold text-white focus:ring-3 focus:outline-hidden sm:mt-2"
+                  href="#"
+                >
+                  Ultimate Plan
+                </a>
+                <h2 className="text-lg md:text-sm font-extrabold text-gray-900 my-5">
+                  Price: $75.00/month
+                  <span className="sr-only">Plan</span>
+                </h2>
+                <p className="text-gray-800 font-bold md:text-[13px] lg:text-[18px]">Speed: Up to 1 Gbps download, 100 Mbps upload</p>
+              </div>
+              <div className="p-6 px-8 md:p-2 md:px-4 lg:p-6 lg:px-8">
+                <ul className="mt-2 space-y-5 sm:mt-0">
+                  <li className="flex items-center gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="size-11 text-indigo-700"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                    <span className="text-gray-700 md:text-sm"> Perfect for heavy usage, including 4K streaming, large file transfers, and smart home devices. </span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="size-5 text-indigo-700"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                    <span className="text-gray-700 md:text-sm"> No term contract required. </span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="size-11 text-indigo-700"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                    <span className="text-gray-700 md:text-sm"> Includes a $10/month discount for automatic payments and paperless billing. </span>
+                  </li>
+                </ul>
+                <a
+                  className="mt-4 block rounded-md border border-primary bg-primary px-3 py-1.5 lg:py-2.5 text-center text-lg font-bold text-white hover:bg-transparent hover:text-primary focus:ring-3 focus:outline-hidden sm:mt-6"
+                  href="#"
+                >
+                  Order Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="mx-auto max-w-screen-xl px-4 py-8 md:px-[4.4rem] sm:py-12 lg:px-8">
+          <h2 className="text-center pb-10 text-[#161c2d] text-2xl lg:text-4xl font-extrabold">Spectrum Packages</h2>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-stretch md:grid-cols-3 md:gap-2 lg:gap-8">
+            <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-xs bg-white">
+              <div className="p-6 px-8 md:p-2 md:px-4 lg:p-6 lg:px-8">
+                <a
+                  className="block rounded-md border border-[#1f2124] bg-[#1f2124] px-3 py-1.5 lg:py-2.5 text-left text-lg font-bold text-white focus:ring-3 focus:outline-hidden sm:mt-2"
+                  href="#"
+                >
+                  Spectrum Basic
+                </a>
+                <h2 className="text-lg md:text-sm font-extrabold text-gray-900 my-5">
+                  Price: $29.99/month
+                  <span className="sr-only">Plan</span>
+                </h2>
+                <p className="text-gray-800 font-bold md:text-[13px] lg:text-[18px]">Speed: Up to 100 Mbps download, 10 Mbps upload</p>
+              </div>
+              <div className="p-6 px-8 md:p-2 md:px-4 lg:p-6 lg:px-8">
+                <ul className="mt-2 space-y-5 sm:mt-0">
+                  <li className="flex items-center gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="size-11 text-indigo-700"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                    <span className="text-gray-700 md:text-sm"> Suitable for everyday activities like browsing, streaming, and video conferencing. </span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="size-5 text-indigo-700"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                    <span className="text-gray-700 md:text-sm"> No term contract required. </span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="size-11 text-indigo-700"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                    <span className="text-gray-700 md:text-sm"> Includes a $10/month discount for automatic payments and paperless billing. </span>
+                  </li>
+                </ul>
+                <a
+                  className="mt-4 block rounded-md border border-primary bg-primary px-3 py-1.5 lg:py-2.5 text-center text-lg font-bold text-white hover:bg-transparent hover:text-primary focus:ring-3 focus:outline-hidden sm:mt-6"
+                  href="#"
+                >
+                  Order Now
+                </a>
+              </div>
+            </div>
+            <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-xs bg-white">
+              <div className="p-6 px-8 md:p-2 md:px-4 lg:p-6 lg:px-8">
+                <a
+                  className="block rounded-md border border-[#1f2124] bg-[#1f2124] px-3 py-1.5 lg:py-2.5 text-left text-lg font-bold text-white focus:ring-3 focus:outline-hidden sm:mt-2"
+                  href="#"
+                >
+                  Spectrum Plus
+                </a>
+                <h2 className="text-lg md:text-sm font-extrabold text-gray-900 my-5">
+                  Price: $49.99.00/month
+                  <span className="sr-only">Plan</span>
+                </h2>
+                <p className="text-gray-800 font-bold md:text-[13px] lg:text-[18px]">Speed: Up to 400 Mbps download, 20 Mbps upload</p>
+              </div>
+              <div className="p-6 px-8 md:p-2 md:px-4 lg:p-6 lg:px-8">
+                <ul className="mt-2 space-y-5 sm:mt-0">
+                  <li className="flex items-center gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="size-11 text-indigo-700"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                    <span className="text-gray-700 md:text-sm"> Ideal for moderate usage such as HD streaming, online gaming, and remote working. </span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="size-5 text-indigo-700"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                    <span className="text-gray-700 md:text-sm"> No term contract required. </span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="size-11 text-indigo-700"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                    <span className="text-gray-700 md:text-sm"> Includes a $10/month discount for automatic payments and paperless billing. </span>
+                  </li>
+                </ul>
+                <a
+                  className="mt-4 block rounded-md border border-primary bg-primary px-3 py-1.5 lg:py-2.5 text-center text-lg font-bold text-white hover:bg-transparent hover:text-primary focus:ring-3 focus:outline-hidden sm:mt-6"
+                  href="#"
+                >
+                  Order Now
+                </a>
+              </div>
+            </div>
+            <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-xs bg-white">
+              <div className="p-6 px-8 md:p-2 md:px-4 lg:p-6 lg:px-8">
+                <a
+                  className="block rounded-md border border-[#1f2124] bg-[#1f2124] px-3 py-1.5 lg:py-2.5 text-left text-lg font-bold text-white focus:ring-3 focus:outline-hidden sm:mt-2"
+                  href="#"
+                >
+                  Spectrum Ultra
+                </a>
+                <h2 className="text-lg md:text-sm font-extrabold text-gray-900 my-5">
+                  Price: $69.99/month
+                  <span className="sr-only">Plan</span>
+                </h2>
+                <p className="text-gray-800 font-bold md:text-[13px] lg:text-[18px]">Speed: Up to 1 Gbps (1000 Mbps) download, 35 Mbps upload</p>
+              </div>
+              <div className="p-6 px-8 md:p-2 md:px-4 lg:p-6 lg:px-8">
+                <ul className="mt-2 space-y-5 sm:mt-0">
+                  <li className="flex items-center gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="size-11 text-indigo-700"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                    <span className="text-gray-700 md:text-sm"> Perfect for heavy usage, including 4K streaming, large file transfers, and smart home devices. </span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="size-5 text-indigo-700"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+
+                    <span className="text-gray-700 md:text-sm"> No term contract required. </span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="size-11 text-indigo-700"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                    <span className="text-gray-700 md:text-sm"> Includes a $10/month discount for automatic payments and paperless billing. </span>
+                  </li>
+                </ul>
+                <a
+                  className="mt-4 block rounded-md border border-primary bg-primary px-3 py-1.5 lg:py-2.5 text-center text-lg font-bold text-white hover:bg-transparent hover:text-primary focus:ring-3 focus:outline-hidden sm:mt-6"
+                  href="#"
+                >
+                  Order Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
       <section className="bg-primary py-10 lg:py-20">
