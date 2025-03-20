@@ -15,7 +15,7 @@ const PrivacyPolicy = () => {
                 </div>
             </section>
 
-            <section className='mx-auto max-w-screen-xl px-4 lg:px-[4.3rem] py-16'>
+            <section className='bg-white mx-auto max-w-screen-xl px-4 lg:px-[4.3rem] py-16'>
                 <div className='privacyPolicy'>
                     <h2>Privacy Policy</h2>
 

@@ -66,7 +66,7 @@ export default function Home() {
       <Navbar />
 
       <section className="hero">
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2 lg:gap-0 mx-auto max-w-screen-xl px-4 pt-[6rem] md:pt-[4rem] lg:pt-[4rem] lg:pb-10 md:px-[4.4rem] lg:h-[840px] lg:items-center lg:px-[4.3rem]">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2 lg:gap-0 mx-auto max-w-screen-xl px-4 md:pt-[2rem] lg:pt-[2rem] lg:pb-10 md:px-[4.4rem] lg:h-[840px] lg:items-center lg:px-[4.3rem]">
           <div>
             <h5 className="text-white font-bold text-[17px] md:text-[15px] mt-5 md:mt-10 lg:mt-0">Welcome to LISAM SOLUTIONS LLC</h5>
             <h1
@@ -77,8 +77,8 @@ export default function Home() {
             >
               Discover seamless connectivity and top-tier service with LISAM SOLUTIONS LLC. We proudly offer the best in telecom solutions from leading providers like Spectrum, HughesNet, AT&T, Xfinity, and more. Whether you need high-speed internet, reliable phone service, or premium TV entertainment, we’ve got you covered.
             </p>
-            <Link href="tel:+1-(888)-845-0301" className="bg-primary py-3 lg:py-4 md:py-3 md:w-[180px] text-center justify-center rounded-md text-white font-bold lg:w-[210px] flex gap-2 items-center hover:animate-bounce-up-down">
-              <Image src={'/phone.png'} alt="phone" width={18} height={18} /> (888)-845-0301
+            <Link href="tel:+1-(888)-845-0301" className="bg-primary justify-center py-3 lg:py-4 md:py-3 md:w-[180px] rounded-md text-white font-bold lg:w-[200px] px-5 flex gap-2 items-center hover:animate-bounce-up-down">
+              <img src={'/phone.png'} alt="phone" width={18} height={18} className="m-0" /> (888)-845-0301
             </Link>
           </div>
           <div>
