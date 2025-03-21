@@ -98,7 +98,39 @@ export default function Home() {
         </div>
       </section>
 
-      
+      <section className="bg-white lg:py-20" id="aboutUs">
+        <div className="mx-auto max-w-screen-xl px-4 py-8 md:px-[4.4rem] lg:px-[4.4rem]">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-5">
+            <div>
+              <Image src='./about.PNG' alt='about' width={600} height={600} />
+            </div>
+            <div>
+              <div className="max-w-lg md:max-w-none">
+                <h5 className="text-primary font-bold">About Us</h5>
+                <h2 className="text-2xl font-bold md:text-[20px] md:leading-[27px] lg:text-[37px] lg:leading-[45px] text-[#161c2d] py-3 lg:py-5 md:py-3">
+                  We Provide Best Fiber Internet Service By Top Providers
+                </h2>
+                <p className="text-gray-700 md:text-sm">
+                  We are affiliate and retail partners of AT&T, Xfinity and Comcast Fiber Internet service providers in the United states for:
+                </p>
+                <div className="flex md:gap-2 lg:gap-20">
+                  <ul className="py-5 lg:py-8 md:py-5">
+                    <li className="flex text-[#161c2d] lg:text-[16px] md:text-[13px] mb-4 lg:mb-5 md:mb-2 items-center"><Check className="text-primary bg-purple-100 rounded-full mr-3 w-5 h-5" /> Fiber Internet</li>
+                    <li className="flex text-[#161c2d] lg:text-[16px] md:text-[13px] mb-4 lg:mb-5 md:mb-2 items-center"><Check className="text-primary bg-purple-100 rounded-full mr-3 w-5 h-5" /> Speed Up To 1Gbps</li>
+                    <li className="flex text-[#161c2d] lg:text-[16px] md:text-[13px] items-center"><Check className="text-primary bg-purple-100 rounded-full mr-3 w-5 h-5" /> Cable Internet</li>
+                  </ul>
+                  <ul className="py-5 lg:py-8 md:py-5">
+                    <li className="flex text-[#161c2d] lg:text-[16px] md:text-[13px] mb-4 lg:mb-5 md:mb-2 items-center"><Check className="text-primary bg-purple-100 rounded-full mr-3 w-5 h-5" /> Cable Internet</li>
+                    <li className="flex text-[#161c2d] lg:text-[16px] md:text-[13px] mb-4 lg:mb-5 md:mb-2 items-center"><Check className="text-primary bg-purple-100 rounded-full mr-3 w-5 h-5" /> Self Installation</li>
+                    <li className="flex text-[#161c2d] lg:text-[16px] md:text-[13px] items-center"><Check className="text-primary bg-purple-100 rounded-full mr-3 w-5 h-5" /> Great Customer Support</li>
+                  </ul>
+                </div>
+                <Link href="tel:+1-(888)-845-0301" className="bg-primary text-white px-5 py-3 lg:py-4 md:py-3 rounded-md font-bold flex w-48 gap-2 items-center hover:animate-bounce-up-down"><Image src={'/phone.png'} alt="phone" width={18} height={18} /> (888)-845-0301</Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="bg-purple-50 lg:pb-16">
         <div className="mx-auto max-w-screen-xl px-4 pt-8 md:px-[4.4rem] sm:pt-12 lg:px-8 lg:pt-20">
